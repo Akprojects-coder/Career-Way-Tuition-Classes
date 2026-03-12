@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Career Way Tuition Classes</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(135deg,#1e3c72,#2a5298,#4facfe);
+color:white;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+padding:20px 40px;
+background:rgba(0,0,0,0.3);
+}
+
+.navbar a{
+color:white;
+margin-left:15px;
+text-decoration:none;
+}
+
+/* HERO */
+
+.hero{
+background:url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f");
+background-size:cover;
+background-position:center;
+text-align:center;
+padding:120px 20px;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+/* HERO STATS */
+
+.hero-cards{
+display:flex;
+justify-content:center;
+gap:20px;
+margin:40px 0;
+flex-wrap:wrap;
+}
+
+.info-card{
+background:rgba(0,0,0,0.6);
+padding:20px;
+border-radius:10px;
+width:150px;
+}
+
+/* BUTTON */
+
+.btn{
+background:#25D366;
+padding:12px 25px;
+border-radius:8px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+/* SECTION */
+
+.container{
+padding:60px 40px;
+text-align:center;
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+/* CARDS */
+
+.card{
+background:white;
+color:black;
+padding:25px;
+border-radius:10px;
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+/* SEATS */
+
+.seats{
+background:#ff4b4b;
+padding:20px;
+border-radius:10px;
+font-weight:bold;
+}
+
+/* FORM */
+
+input,textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:8px;
+border:none;
+}
+
+button{
+background:#25D366;
+border:none;
+padding:12px 25px;
+border-radius:8px;
+color:white;
+font-weight:bold;
+cursor:pointer;
+}
+
+/* QR */
+
+.qr{
+width:220px;
+margin-top:20px;
+background:white;
+padding:10px;
+border-radius:10px;
+}
+
+/* WHATSAPP FLOAT */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:12px;
+border-radius:50%;
+}
+
+.whatsapp img{
+width:35px;
+height:35px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+<div><b>Career Way Tuition Classes</b></div>
+<div>
+<a href="#">Home</a>
+<a href="#">Courses</a>
+<a href="#">Contact</a>
+</div>
+</div>
+
+
+<section class="hero">
+
+<h1>Start Your Career Journey With Us</h1>
+<p>Expert Accounts & Tally Coaching for Class 11 & 12 (CBSE & RBSE)</p>
+
+<div class="hero-cards">
+
+<div class="info-card">
+<h2>18+</h2>
+<p>Years Teaching Experience</p>
+</div>
+
+<div class="info-card">
+<h2>500+</h2>
+<p>Students Taught</p>
+</div>
+
+<div class="info-card">
+<h2>Weekly</h2>
+<p>Tests & Practice</p>
+</div>
+
+</div>
+
+<a href="https://api.whatsapp.com/send?phone=919782996765" target="_blank" class="btn">
+Chat on WhatsApp
+</a>
+
+</section>
+
+
+<section class="container">
+
+<h2>Courses Offered</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Accounts</h3>
+<p>Complete Accounts syllabus for Class 11 & 12</p>
+</div>
+
+<div class="card">
+<h3>Tally</h3>
+<p>Professional Tally accounting software training</p>
+</div>
+
+<div class="card">
+<h3>CBSE & RBSE</h3>
+<p>Preparation for both boards</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="container">
+
+<h2>Why Choose Us</h2>
+
+<div class="grid">
+
+<div class="card">Weekly Tests</div>
+<div class="card">Sample Papers Practice</div>
+<div class="card">AC Classroom</div>
+<div class="card">10 Years Board Papers</div>
+<div class="card">Important Booklets</div>
+<div class="card">24/7 Doubt Support</div>
+
+</div>
+
+</section>
+
+
+<section class="container">
+
+<h2>Limited Seats</h2>
+
+<div class="seats">
+🔥 Only 20 Seats Left – Limited Batch
+</div>
+
+</section>
+
+
+<section class="container">
+
+<h2>Admission Enquiry</h2>
+
+<input id="name" placeholder="Student Name">
+<input id="class" placeholder="Class">
+<input id="mobile" placeholder="Mobile Number">
+<textarea id="query" placeholder="Your Query"></textarea>
+
+<button onclick="sendToWhatsApp()">Send Enquiry</button>
+
+</section>
+
+
+<section class="container">
+
+<h2>Our Location</h2>
+
+<!-- Yaha apna QR image link daalna -->
+<img class="qr" src="https://pub-141831e61e69445289222976a15b6fb3.r2.dev/Image_to_url_V2/Qr-imagetourl.cloud-1773241830722-9m0l84.png">
+
+<p>Scan to open location in Google Maps</p>
+
+</section>
+
+
+<!-- WhatsApp Floating Button -->
+<a class="whatsapp" href="https://api.whatsapp.com/send?phone=919782996765" target="_blank">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+</a>
+
+
+<script>
+
+function sendToWhatsApp(){
+
+let name=document.getElementById("name").value;
+let studentClass=document.getElementById("class").value;
+let mobile=document.getElementById("mobile").value;
+let query=document.getElementById("query").value;
+
+let phone="919782996765";
+
+let message=
+"New Admission Enquiry%0A%0A"+
+"Student Name: "+name+"%0A"+
+"Class: "+studentClass+"%0A"+
+"Mobile: "+mobile+"%0A"+
+"Query: "+query;
+
+let url="https://api.whatsapp.com/send?phone="+phone+"&text="+message;
+
+window.open(url,"_blank");
+
+}
+
+</script>
+
+</body>
+</html>
