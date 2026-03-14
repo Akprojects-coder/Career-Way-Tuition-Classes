@@ -1,328 +1,359 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Career Way Tuition Classes</title>
-<meta name="google-site-verification" content="8iCqpf-mreqan7JME4K5Cd4vYoMhSRfV0ZQI6n9ip-8" />
-<meta name="description" content="Career Way Tuition Classes provides best tuition for Accounts, Tally and Commerce students.">
-<meta name="keywords" content="tuition classes, tuition classes near me, career way tuition classes, accounts tuition, tally tuition, best accounts tution class 12, class 11 tution classes, commerce tuition, accounts coaching, tally coaching near me">
-<style>
-
-body{
-margin:0;
-font-family:Arial;
-background:linear-gradient(135deg,#1e3c72,#2a5298,#4facfe);
-color:white;
-}
-
-/* NAVBAR */
-
-.navbar{
-display:flex;
-justify-content:space-between;
-padding:20px 40px;
-background:rgba(0,0,0,0.3);
-}
-
-.navbar a{
-color:white;
-margin-left:15px;
-text-decoration:none;
-}
-
-/* HERO */
-
-.hero{
-background:url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f");
-background-size:cover;
-background-position:center;
-text-align:center;
-padding:120px 20px;
-}
-
-.hero h1{
-font-size:40px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-/* HERO STATS */
-
-.hero-cards{
-display:flex;
-justify-content:center;
-gap:20px;
-margin:40px 0;
-flex-wrap:wrap;
-}
-
-.info-card{
-background:rgba(0,0,0,0.6);
-padding:20px;
-border-radius:10px;
-width:150px;
-}
-
-/* BUTTON */
-
-.btn{
-background:#25D366;
-padding:12px 25px;
-border-radius:8px;
-text-decoration:none;
-color:white;
-font-weight:bold;
-}
-
-/* SECTION */
-
-.container{
-padding:60px 40px;
-text-align:center;
-}
-
-/* GRID */
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-margin-top:20px;
-}
-
-/* CARDS */
-
-.card{
-background:white;
-color:black;
-padding:25px;
-border-radius:10px;
-box-shadow:0 10px 20px rgba(0,0,0,0.2);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-6px);
-}
-
-/* SEATS */
-
-.seats{
-background:#ff4b4b;
-padding:20px;
-border-radius:10px;
-font-weight:bold;
-}
-
-/* FORM */
-
-input,textarea{
-width:100%;
-padding:12px;
-margin:10px 0;
-border-radius:8px;
-border:none;
-}
-
-button{
-background:#25D366;
-border:none;
-padding:12px 25px;
-border-radius:8px;
-color:white;
-font-weight:bold;
-cursor:pointer;
-}
-
-/* QR */
-
-.qr{
-width:220px;
-margin-top:20px;
-background:white;
-padding:10px;
-border-radius:10px;
-}
-
-/* WHATSAPP FLOAT */
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-padding:12px;
-border-radius:50%;
-}
-
-.whatsapp img{
-width:35px;
-height:35px;
-}
-
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Career Way Coaching Classes - Jaipur</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+    body { font-family: 'Poppins', sans-serif; }
+    .hero-bg {
+      background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+    .nav-link { transition: all 0.3s; }
+    .nav-link:hover { color: #f97316; transform: translateY(-2px); }
+    .stat-card { transition: all 0.4s; }
+    .stat-card:hover { transform: scale(1.08); }
+    .course-card, .feature-card { transition: all 0.4s; }
+    .course-card:hover, .feature-card:hover { transform: translateY(-12px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+    .map-frame { border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+   
+    /* Modal Styles */
+    #enquiryModal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.7);
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+    .modal-content {
+      background: white;
+      border-radius: 24px;
+      max-width: 480px;
+      width: 90%;
+      max-height: 95vh;
+      overflow-y: auto;
+      box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4);
+    }
+  </style>
 </head>
+<body class="bg-[#fffaf0] text-gray-800">
 
-<body>
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <!-- ==================== REPLACE WITH YOUR LOGO ==================== -->
+        <img src="https://image2url.com/r2/default/images/1773465698484-f9c11dfd-ddb3-4bfc-84c1-d7bb55ca7b2f.jpeg" alt="Career Way Logo" class="h-12">
+        <!-- ============================================================== -->
+        <div>
+          <span class="text-xl font-bold text-orange-600">Career Way</span>
+          <span class="text-xl font-semibold">Coaching Classes</span>
+        </div>
+      </div>
+      <div class="hidden md:flex items-center gap-8 text-base font-medium">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Courses</a>
+        <a href="#" class="nav-link">Contact</a>
+      </div>
+      <button onclick="openEnquiryModal()" class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-semibold text-sm transition">
+        Enroll Now
+      </button>
+    </div>
+  </nav>
 
-<div class="navbar">
-<div><b>Career Way Tuition Classes</b></div>
-<div>
-<a href="#">Home</a>
-<a href="#">Courses</a>
-<a href="#">Contact</a>
-</div>
-</div>
+  <!-- Hero -->
+  <header class="hero-bg text-white py-24 md:py-32">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="text-orange-400 font-medium tracking-widest text-sm md:text-base">JAIPUR'S TRUSTED COACHING INSTITUTE</p>
+        <h1 class="text-5xl md:text-6xl font-bold leading-tight mt-3">Career Way<br>Coaching Classes</h1>
+        <p class="text-xl mt-6 max-w-lg">
+          Welcome to Career Way Coaching Classes, your premier destination for RBSE &amp; CBSE coaching specializing in Accountancy and Tally.
+        </p>
+        <div class="mt-10 flex flex-wrap gap-4">
+          <button onclick="openEnquiryModal()" class="bg-orange-500 hover:bg-orange-600 px-10 py-4 rounded-full font-semibold text-lg inline-block">
+            Enroll Now
+          </button>
+          <a href="#contact" class="border-2 border-white hover:bg-white hover:text-orange-600 px-10 py-4 rounded-full font-semibold text-lg inline-block">
+            Contact Us
+          </a>
+        </div>
+      </div>
+      <div class="relative">
+        <!-- ==================== REPLACE WITH YOUR CLASSROOM PHOTO ==================== -->
+        <img src="https://image2url.com/r2/default/images/1773466168586-9b5111d7-4d3e-4b8a-8318-717d5b0663b8.png" alt="Classroom" class="rounded-3xl shadow-2xl w-full">
+       <!-- ============================================================== -->
+          <p class="font-bold text-white-600 text-lg">Career Way Coaching</p>
+          <p class="text-xs text-orrange-500">Jaipur's Trusted Institute</p>
+        </div>
+      </div>
+    </div>
+  </header>
 
+  <!-- Stats -->
+  <div class="max-w-7xl mx-auto px-6 -mt-12 relative z-10">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="stat-card bg-white rounded-3xl shadow-xl p-8 text-center">
+        <i class="fa-solid fa-chalkboard-teacher text-5xl text-orange-500 mb-3"></i>
+        <div class="text-5xl font-bold text-orange-500">100%</div>
+        <div class="text-gray-600 mt-2 font-medium">Paper Match</div>
+      </div>
+      <div class="stat-card bg-white rounded-3xl shadow-xl p-8 text-center">
+        <i class="fa-solid fa-clock text-5xl text-orange-500 mb-3"></i>
+        <div class="text-5xl font-bold text-orange-500">18+</div>
+        <div class="text-gray-600 mt-2 font-medium">Years Experience</div>
+      </div>
+      <div class="stat-card bg-white rounded-3xl shadow-xl p-8 text-center">
+        <i class="fa-solid fa-users text-5xl text-orange-500 mb-3"></i>
+        <div class="text-5xl font-bold text-orange-500">500+</div>
+        <div class="text-gray-600 mt-2 font-medium">Happy Students</div>
+      </div>
+      <div class="stat-card bg-white rounded-3xl shadow-xl p-8 text-center">
+        <i class="fa-solid fa-trophy text-5xl text-orange-500 mb-3"></i>
+        <div class="text-5xl font-bold text-orange-500">95%</div>
+        <div class="text-gray-600 mt-2 font-medium">Success Rate</div>
+      </div>
+    </div>
+  </div>
 
-<section class="hero">
+  <!-- Welcome Section -->
+  <section class="max-w-7xl mx-auto px-6 py-20">
+    <h2 class="text-4xl font-bold text-center mb-16">Welcome to <span class="text-orange-600">Career Way Coaching Classes</span></h2>
+    <div class="grid md:grid-cols-12 gap-12 items-start">
+      <div class="md:col-span-5">
+        <div class="flex items-center gap-6">
+          <!-- ==================== REPLACE WITH ANIL KUMAR AGARWAL PHOTO ==================== -->
+          <img src="YOUR_FOUNDER_PHOTO_URL_HERE" alt="Anil Kumar Agarwal" class="w-24 h-24 rounded-2xl object-cover shadow-lg border-4 border-white">
+          <!-- ====================================================================== -->
+          <div>
+            <p class="font-semibold text-2xl">Anil Kumar Agarwal</p>
+            <p class="text-orange-500">Founder &amp; Director</p>
+          </div>
+        </div>
+        <p class="italic mt-8 text-gray-600 text-lg leading-relaxed">
+          "Education is not just about learning facts, it's about developing the ability to think critically and solve problems. At Career Way Coaching Classes, we focus on building strong foundations and nurturing each student's unique potential."
+        </p>
+      </div>
+      <div class="md:col-span-7 grid md:grid-cols-2 gap-8">
+        <div class="bg-orange-500 text-white p-10 rounded-3xl">
+          <h3 class="text-2xl font-semibold mb-4 flex items-center gap-3"><i class="fa-solid fa-bullseye"></i> Our Mission</h3>
+          <p>To provide quality education that builds strong academic foundations, critical thinking skills, and professional success for every student.</p>
+        </div>
+        <div class="bg-white border border-orange-200 p-10 rounded-3xl">
+          <h3 class="text-2xl font-semibold mb-4 flex items-center gap-3 text-orange-600"><i class="fa-solid fa-eye"></i> Our Vision</h3>
+          <p>To be the most trusted coaching institute in Jaipur, known for academic excellence and holistic student development.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<h1>Start Your Career Journey With Us</h1>
-<p>Expert Accounts & Tally Coaching for Class 11 & 12 (CBSE & RBSE)</p>
+  <!-- Courses -->
+  <section class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-4">Courses <span class="text-orange-600">We Offer</span></h2>
+      <p class="text-center text-gray-600 mb-12">Comprehensive coaching programs designed to help students excel</p>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="course-card bg-white border border-orange-100 rounded-3xl p-8 text-center">
+          <i class="fa-solid fa-graduation-cap text-4xl text-orange-500 mb-4"></i>
+          <h3 class="font-semibold text-2xl mb-3">Class 11 Commerce</h3>
+          <p class="text-gray-600">Accountancy</p>
+        </div>
+        <div class="course-card bg-white border border-orange-100 rounded-3xl p-8 text-center">
+          <i class="fa-solid fa-graduation-cap text-4xl text-orange-500 mb-4"></i>
+          <h3 class="font-semibold text-2xl mb-3">Class 12 Commerce</h3>
+          <p class="text-gray-600">RBSE &amp; CBSE Full Syllabus</p>
+        </div>
+        <div class="course-card bg-white border border-orange-100 rounded-3xl p-8 text-center">
+          <i class="fa-solid fa-calculator text-4xl text-orange-500 mb-4"></i>
+          <h3 class="font-semibold text-2xl mb-3">Accountancy</h3>
+          <p class="text-gray-600">Concept Clarity + Practical Problems</p>
+        </div>
+        <div class="course-card bg-white border border-orange-100 rounded-3xl p-8 text-center">
+          <i class="fa-solid fa-laptop text-4xl text-orange-500 mb-4"></i>
+          <h3 class="font-semibold text-2xl mb-3">Tally with GST</h3>
+          <p class="text-gray-600">Real Projects + Certification</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="hero-cards">
+  <!-- What Makes Us Different -->
+  <section class="py-20 bg-[#fffaf0]">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-16">What Makes Us <span class="text-orange-600">Different</span></h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="feature-card bg-white p-8 rounded-3xl text-center shadow flex flex-col items-center"><i class="fa-solid fa-user-tie text-4xl text-orange-500 mb-4"></i><span class="font-semibold">Expert Faculty</span></div>
+        <div class="feature-card bg-white p-8 rounded-3xl text-center shadow flex flex-col items-center"><i class="fa-solid fa-users text-4xl text-orange-500 mb-4"></i><span class="font-semibold">Individual Attention</span></div>
+        <div class="feature-card bg-white p-8 rounded-3xl text-center shadow flex flex-col items-center"><i class="fa-solid fa-chart-line text-4xl text-orange-500 mb-4"></i><span class="font-semibold">Proven Results</span></div>
+        <div class="feature-card bg-white p-8 rounded-3xl text-center shadow flex flex-col items-center"><i class="fa-solid fa-lightbulb text-4xl text-orange-500 mb-4"></i><span class="font-semibold">Conceptual Clarity</span></div>
+        <div class="feature-card bg-white p-8 rounded-3xl text-center shadow flex flex-col items-center"><i class="fa-solid fa-book text-4xl text-orange-500 mb-4"></i><span class="font-semibold">Comprehensive Study</span></div>
+        <div class="feature-card bg-white p-8 rounded-3xl text-center shadow flex flex-col items-center"><i class="fa-solid fa-question-circle text-4xl text-orange-500 mb-4"></i><span class="font-semibold">Doubt Sessions</span></div>
+        <div class="feature-card bg-white p-8 rounded-3xl text-center shadow flex flex-col items-center"><i class="fa-solid fa-clock text-4xl text-orange-500 mb-4"></i><span class="font-semibold">Batch Timings<br><small class="text-orange-500">5:00 PM – 6:00 PM<br>6:00 PM – 7:00 PM</small></span></div>
+        <div class="feature-card bg-white p-8 rounded-3xl text-center shadow flex flex-col items-center"><i class="fa-solid fa-building text-4xl text-orange-500 mb-4"></i><span class="font-semibold">Modern Infrastructure</span></div>
+      </div>
+    </div>
+  </section>
 
-<div class="info-card">
-<h2>18+</h2>
-<p>Years Teaching Experience</p>
-</div>
+  <!-- Start Your Success Journey -->
+  <section class="bg-gradient-to-r from-orange-600 to-orange-700 text-white py-20">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-5xl font-bold">Start Your Success Journey Today</h2>
+      <p class="mt-6 text-xl max-w-2xl mx-auto">Join hundreds of students who have achieved their academic goals with us.</p>
+      <button onclick="openEnquiryModal()" class="mt-10 inline-block bg-white text-orange-700 px-12 py-5 rounded-full font-semibold text-lg">
+        Enroll Now →
+      </button>
+    </div>
+  </section>
 
-<div class="info-card">
-<h2>500+</h2>
-<p>Students Taught</p>
-</div>
+  <!-- Contact Us (Email added + Correct Map) -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-16">Contact <span class="text-orange-600">Us</span></h2>
+      <div class="grid md:grid-cols-2 gap-16">
+        <div class="space-y-12">
+          <!-- Phone -->
+          <div class="flex gap-6">
+            <i class="fa-solid fa-phone text-5xl text-orange-500"></i>
+            <div>
+              <p class="font-semibold text-3xl">+91 9782996765</p>
+              <p class="text-gray-600">Call / WhatsApp</p>
+            </div>
+          </div>
+          
+          <!-- Email (NEW - added as requested) -->
+          <div class="flex gap-6">
+            <i class="fa-solid fa-envelope text-5xl text-orange-500"></i>
+            <div>
+              <p class="font-semibold text-3xl">info@careerwaycoaching.com</p>
+              <p class="text-gray-600">Send us an email</p>
+            </div>
+          </div>
 
-<div class="info-card">
-<h2>Weekly</h2>
-<p>Tests & Practice</p>
-</div>
+          <!-- Address -->
+          <div class="flex gap-6">
+            <i class="fa-solid fa-location-dot text-5xl text-orange-500"></i>
+            <div>
+              <p class="font-semibold text-lg">A-93 BA, Gandhi Path Rd,<br>near NYMPH ACADEMY SCHOOL,<br>KIRAN MARRIAGE GARDEN,<br>Anupam Vihar Colony, Vaishali Nagar,<br>Jaipur, Rajasthan 302034</p>
+            </div>
+          </div>
 
-</div>
+          <!-- Social -->
+          <div class="flex gap-6">
+            <a href="https://www.instagram.com/anil_rohitasve_agarwal" target="_blank" class="flex items-center gap-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-2xl font-semibold">
+              <i class="fa-brands fa-instagram text-3xl"></i>
+              <span>Instagram</span>
+            </a>
+            <a href="https://wa.me/919782996765" target="_blank" class="flex items-center gap-3 bg-green-500 text-white px-8 py-4 rounded-2xl font-semibold">
+              <i class="fa-brands fa-whatsapp text-3xl"></i>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
 
-<a href="https://api.whatsapp.com/send?phone=919782996765" target="_blank" class="btn">
-Chat on WhatsApp
-</a>
+        <!-- MAP (Corrected) -->
+        <div>
+          <!-- ==================== CORRECT MAP EMBED (paste from your link) ==================== -->
+          <!-- Go to https://share.google/EDJdmKFvoMVS7cW5u → Click Share → Embed a map → Copy the iframe code -->
+          <!-- Replace the entire src below with your correct embed src -->
+          <iframe src="https://www.google.com/maps?output=embed&q=26.912,75.747" 
+                  width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy" class="map-frame"></iframe>
+          <!-- ====================================================================== -->
+        </div>
+      </div>
+    </div>
+  </section>
 
-</section>
+  <!-- ENQUIRY MODAL -->
+  <div id="enquiryModal">
+    <div class="modal-content">
+      <div class="p-8">
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-2xl font-bold">Send an Enquiry</h2>
+          <button onclick="closeEnquiryModal()" class="text-gray-400 hover:text-gray-600 text-3xl leading-none">×</button>
+        </div>
+        <p class="text-gray-600 mb-8">Fill the form below and we'll get back to you shortly.</p>
+        <form id="enquiryForm" onsubmit="sendToWhatsApp(event)">
+          <div class="space-y-6">
+            <div>
+              <label class="block text-sm font-medium mb-2">Full Name <span class="text-red-500">*</span></label>
+              <input type="text" id="name" required class="w-full px-5 py-4 rounded-2xl border border-gray-200 focus:border-orange-500 outline-none" placeholder="Enter your name">
+            </div>
+            <div class="grid grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-medium mb-2">Phone Number <span class="text-red-500">*</span></label>
+                <input type="tel" id="phone" required class="w-full px-5 py-4 rounded-2xl border border-gray-200 focus:border-orange-500 outline-none" placeholder="Your phone number">
+              </div>
+              <div>
+                <label class="block text-sm font-medium mb-2">Email Address</label>
+                <input type="email" id="email" class="w-full px-5 py-4 rounded-2xl border border-gray-200 focus:border-orange-500 outline-none" placeholder="Your email">
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-2">Interested In <span class="text-red-500">*</span></label>
+              <select id="course" required class="w-full px-5 py-4 rounded-2xl border border-gray-200 focus:border-orange-500 outline-none bg-white">
+                <option value="">Select a course/program</option>
+                <option value="Class 11 Commerce">Class 11 Commerce</option>
+                <option value="Class 12 Commerce">Class 12 Commerce</option>
+                <option value="Accountancy">Accountancy</option>
+                <option value="Tally with GST">Tally with GST</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-2">Message</label>
+              <textarea id="message" rows="3" class="w-full px-5 py-4 rounded-2xl border border-gray-200 focus:border-orange-500 outline-none" placeholder="Any specific questions or requirements?"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold py-5 rounded-2xl flex items-center justify-center gap-3 text-lg">
+              <i class="fa-solid fa-paper-plane"></i>
+              Send via WhatsApp
+            </button>
+          </div>
+        </form>
+        <p class="text-center text-gray-500 mt-6">
+          Or call us directly at <a href="tel:+919782996765" class="text-orange-600 font-medium">+91 9782996765</a>
+        </p>
+      </div>
+    </div>
+  </div>
 
+  <!-- Footer -->
+  <footer class="bg-[#0f172a] text-white py-12">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <p class="text-2xl font-bold">Career Way Coaching Classes</p>
+      <p class="mt-2 text-gray-400">Vaishali Nagar, Jaipur • Since 2010</p>
+      <p class="mt-8 text-sm">© 2026 Career Way Coaching Classes. All Rights Reserved.</p>
+    </div>
+  </footer>
 
-<section class="container">
-
-<h2>Courses Offered</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Accounts</h3>
-<p>Complete Accounts syllabus for Class 11 & 12</p>
-</div>
-
-<div class="card">
-<h3>Tally</h3>
-<p>Professional Tally accounting software training</p>
-</div>
-
-<div class="card">
-<h3>CBSE & RBSE</h3>
-<p>Preparation for both boards</p>
-</div>
-
-</div>
-
-</section>
-
-
-<section class="container">
-
-<h2>Why Choose Us</h2>
-
-<div class="grid">
-
-<div class="card">Weekly Tests</div>
-<div class="card">Sample Papers Practice</div>
-<div class="card">AC Classroom</div>
-<div class="card">10 Years Board Papers</div>
-<div class="card">Important Booklets</div>
-<div class="card">24/7 Doubt Support</div>
-
-</div>
-
-</section>
-
-
-<section class="container">
-
-<h2>Limited Seats</h2>
-
-<div class="seats">
-🔥 Only 20 Seats Left – Limited Batch
-</div>
-
-</section>
-
-
-<section class="container">
-
-<h2>Admission Enquiry</h2>
-
-<input id="name" placeholder="Student Name">
-<input id="class" placeholder="Class">
-<input id="mobile" placeholder="Mobile Number">
-<textarea id="query" placeholder="Your Query"></textarea>
-
-<button onclick="sendToWhatsApp()">Send Enquiry</button>
-
-</section>
-
-
-<section class="container">
-
-<h2>Our Location</h2>
-
-<!-- Yaha apna QR image link daalna -->
-<img class="qr" src="https://pub-141831e61e69445289222976a15b6fb3.r2.dev/Image_to_url_V2/Qr-imagetourl.cloud-1773241830722-9m0l84.png">
-
-<p>Scan to open location in Google Maps</p>
-
-</section>
-
-
-<!-- WhatsApp Floating Button -->
-<a class="whatsapp" href="https://api.whatsapp.com/send?phone=919782996765" target="_blank">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-</a>
-
-
-<script>
-
-function sendToWhatsApp(){
-
-let name=document.getElementById("name").value;
-let studentClass=document.getElementById("class").value;
-let mobile=document.getElementById("mobile").value;
-let query=document.getElementById("query").value;
-
-let phone="919782996765";
-
-let message=
-"New Admission Enquiry%0A%0A"+
-"Student Name: "+name+"%0A"+
-"Class: "+studentClass+"%0A"+
-"Mobile: "+mobile+"%0A"+
-"Query: "+query;
-
-let url="https://api.whatsapp.com/send?phone="+phone+"&text="+message;
-
-window.open(url,"_blank");
-
-}
-
-</script>
-
+  <script>
+    function openEnquiryModal() {
+      document.getElementById('enquiryModal').style.display = 'flex';
+    }
+    function closeEnquiryModal() {
+      document.getElementById('enquiryModal').style.display = 'none';
+    }
+    function sendToWhatsApp(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const email = document.getElementById('email').value || 'N/A';
+      const course = document.getElementById('course').value;
+      const message = document.getElementById('message').value || 'No message';
+      const text = `Hello Career Way Coaching!%0A%0AName: ${name}%0APhone: ${phone}%0AEmail: ${email}%0AInterested in: ${course}%0AMessage: ${message}%0A%0APlease contact me.`;
+      const whatsappURL = `https://wa.me/919782996765?text=${text}`;
+      window.open(whatsappURL, '_blank');
+      setTimeout(() => closeEnquiryModal(), 800);
+    }
+    document.getElementById('enquiryModal').addEventListener('click', function(e) {
+      if (e.target.id === 'enquiryModal') closeEnquiryModal();
+    });
+  </script>
 </body>
-
 </html>
-
-
